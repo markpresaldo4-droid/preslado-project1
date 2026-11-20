@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title">
+  <title id="title">Mark Presaldo monogram</title>
+  <defs>
+    <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#173f73" opacity="0.1"/>
+      <circle cx="6" cy="5" r="0.55" fill="#173f73" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <circle cx="180" cy="180" r="151" fill="#ffd84d"/>
+  <circle cx="180" cy="180" r="151" fill="url(#grain)"/>
+  <circle cx="180" cy="180" r="133" fill="none" stroke="#173f73" stroke-width="1.4" opacity="0.38"/>
+  <path d="M71 191c0-67 47-115 110-115 61 0 108 48 108 115s-47 112-108 112c-63 0-110-45-110-112Z" fill="none" stroke="#173f73" stroke-width="1.5" opacity="0.35" transform="rotate(-22 180 180)"/>
+  <text x="180" y="204" text-anchor="middle" fill="#173f73" font-family="Georgia, 'Times New Roman', serif" font-size="117" letter-spacing="-18">MP</text>
+  <circle cx="274" cy="99" r="7" fill="#956900"/>
+  <path d="M81 268l-11 11m5-17 12 12" stroke="#956900" stroke-width="2" stroke-linecap="round"/>
+</svg>
