@@ -1,155 +1,75 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eef5ff">
-  <meta name="description" content="Mark Presaldo is an Information Technology student exploring software, systems, and practical technology projects.">
-  <meta property="og:title" content="Mark Presaldo — IT Student Portfolio">
-  <meta property="og:description" content="Projects, study areas, and the learning journey of an Information Technology student.">
-  <meta property="og:type" content="website">
-  <title>Mark Presaldo — IT Student Portfolio</title>
-  <link rel="icon" type="image/svg+xml" href="assets/mark-monogram.svg">
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<style>
+  :root {
+    --theme-red: #b5122a;
+    --theme-red-dark: #850d20;
+    --theme-red-soft: #fff1f2;
+    --theme-white: #ffffff;
+    --theme-ink: #2b2022;
+  }
 
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <a class="brand" href="#top" aria-label="Mark Presaldo home">
-        <span class="brand-mark" aria-hidden="true">MP</span>
-        <span class="brand-name">Mark Presaldo<span class="brand-period">.</span></span>
-      </a>
-      <nav class="primary-nav" aria-label="Main navigation">
-        <a href="#about">About me</a>
-        <a href="#work">IT projects</a>
-        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
+  html,
+  body {
+    background: var(--theme-white) !important;
+    color: var(--theme-ink);
+  }
 
-  <main id="main">
-    <section class="hero section-wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Information Technology student <span class="eyebrow-divider">/</span> 2026</p>
-        <h1 id="hero-title">Technology that<br><span>solves real problems.</span></h1>
-        <p class="hero-lede">I’m Mark, an Information Technology student learning to create useful digital experiences and practical technology solutions.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my projects <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="#about">About my IT journey <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="hero-note"><span class="note-rule" aria-hidden="true"></span> Learning, building, and improving one project at a time.</p>
-      </div>
+  .site-header,
+  .about,
+  .site-footer {
+    background: var(--theme-white) !important;
+  }
 
-      <div class="hero-art">
-        <div class="art-orbit orbit-one" aria-hidden="true"></div>
-        <div class="art-orbit orbit-two" aria-hidden="true"></div>
-        <div class="art-caption art-caption-top">Information Technology student</div>
-        <img class="profile-photo" src="asset/mark-profile.jpg" alt="Mark Presaldo seated at a table" width="1632" height="1628">
-        <div class="art-caption art-caption-bottom"><span>IT STUDENT</span> <span>—</span> <span>Learning through technology.</span></div>
-      </div>
-    </section>
+  .hero,
+  .contact {
+    background: var(--theme-red) !important;
+    color: var(--theme-white) !important;
+  }
 
-    <div class="ticker" aria-label="Technology in practice, learning by building, practical problem-solving">
-      <div class="ticker-track" aria-hidden="true">
-        <span>Technology in practice</span><i>✳</i><span>Learning by building</span><i>✳</i><span>Practical problem-solving</span><i>✳</i><span>Technology in practice</span><i>✳</i><span>Learning by building</span><i>✳</i><span>Practical problem-solving</span><i>✳</i>
-      </div>
-    </div>
+  .hero *,
+  .contact * {
+    color: var(--theme-white) !important;
+  }
 
-    <section class="about section-wrap section-space" id="about" aria-labelledby="about-title">
-      <div class="section-label"><span>01</span><span>About me</span></div>
-      <div class="about-content">
-        <h2 id="about-title">A student of technology.<br><em>A builder in progress.</em></h2>
-        <div class="about-columns">
-          <p class="about-lede">I’m Mark Presaldo, an Information Technology student interested in how technology can solve practical, everyday problems.</p>
-          <div class="about-detail">
-            <p>My portfolio follows my learning journey—from IT foundations and web development to the projects I create as I grow. I’m developing a thoughtful, user-first approach to technology and always looking for the next thing to learn.</p>
-            <a class="text-link" href="#contact">Connect with me <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="skills-panel">
-          <div class="skills-heading"><span>Areas I’m exploring</span><span class="skills-heading-line" aria-hidden="true"></span><span>Growing every day</span></div>
-          <ul class="skill-list" aria-label="Information Technology study areas">
-            <li><span class="skill-index">01</span> Programming fundamentals</li>
-            <li><span class="skill-index">02</span> Web development</li>
-            <li><span class="skill-index">03</span> Computer systems</li>
-            <li><span class="skill-index">04</span> IT problem-solving</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  .hero .button-primary {
+    background: var(--theme-white) !important;
+    color: var(--theme-red-dark) !important;
+    border-color: var(--theme-white) !important;
+  }
 
-    <section class="work section-wrap section-space" id="work" aria-labelledby="work-title">
-      <div class="section-label"><span>02</span><span>IT projects</span></div>
-      <div class="work-content">
-        <div class="work-heading-row">
-          <div>
-            <p class="eyebrow">Learning through practice</p>
-            <h2 id="work-title">Ideas into <em>solutions.</em></h2>
-          </div>
-          <p class="work-intro">Coursework and personal practice help me turn new technology concepts into useful projects.</p>
-        </div>
+  .ticker {
+    background: var(--theme-red-dark) !important;
+    color: var(--theme-white) !important;
+  }
 
-        <div class="project-list">
-          <article class="project-card project-featured">
-            <div class="project-number">01 <span>—</span> WEB / 2026</div>
-            <div class="project-main">
-              <div class="project-title-row"><h3>IT student portfolio</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
-              <p>A responsive portfolio introducing my interests and learning journey, built with semantic HTML and custom CSS.</p>
-              <ul class="tag-list" aria-label="Project technologies"><li>HTML</li><li>CSS</li><li>Responsive design</li></ul>
-            </div>
-            <div class="project-art project-art-one" aria-hidden="true"><span class="project-art-label">My learning journey</span><span class="project-art-symbol">01<span>.</span></span><span class="project-art-foot">MARK / IT STUDENT</span></div>
-          </article>
+  .ticker * {
+    color: var(--theme-white) !important;
+  }
 
-          <article class="project-card">
-            <div class="project-number">02 <span>—</span> COURSEWORK</div>
-            <div class="project-main">
-              <div class="project-title-row"><h3>Class project</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
-              <p>Add an Information Technology class project here: its goal, the tools you used, and what you learned while building it.</p>
-              <ul class="tag-list" aria-label="Suggested coursework details"><li>Coursework</li><li>Tools used</li><li>Year</li></ul>
-            </div>
-            <div class="project-art project-art-two" aria-hidden="true"><span class="project-art-label">Learning by doing</span><span class="project-art-symbol">02<span>.</span></span><span class="project-art-foot">COURSEWORK</span></div>
-          </article>
+  .work {
+    background: var(--theme-red-soft) !important;
+  }
 
-          <article class="project-card">
-            <div class="project-number">03 <span>—</span> NEXT BUILD</div>
-            <div class="project-main">
-              <div class="project-title-row"><h3>Next IT project</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
-              <p>Use this space for a future web, software, or systems project and describe the problem you want to solve.</p>
-              <ul class="tag-list" aria-label="Suggested project details"><li>Idea</li><li>Process</li><li>Outcome</li></ul>
-            </div>
-            <div class="project-art project-art-three" aria-hidden="true"><span class="project-art-label">Still taking shape</span><span class="project-art-symbol">03<span>.</span></span><span class="project-art-foot">IN PROGRESS</span></div>
-          </article>
-        </div>
-        <p class="project-reminder"><span aria-hidden="true">↳</span> Add your own coursework and IT projects here as you complete them.</p>
-      </div>
-    </section>
+  .project-card,
+  .skills-panel {
+    background: var(--theme-white) !important;
+    border-color: rgba(181, 18, 42, 0.2) !important;
+  }
 
-    <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
-      <div class="contact-kicker"><span class="status-dot" aria-hidden="true"></span> IT student portfolio</div>
-      <div class="contact-grid">
-        <div>
-          <p class="eyebrow">03 / Contact</p>
-          <h2 id="contact-title">Let’s talk about<br><em>technology.</em></h2>
-        </div>
-        <div class="contact-details">
-          <p>Interested in an IT project, a learning opportunity, or a collaboration? Update the sample contact details below before sharing this portfolio.</p>
-          <a class="contact-email" href="mailto:your.email@example.com">your.email@example.com <span aria-hidden="true">↗</span></a>
-          <div class="social-links" aria-label="Social profiles">
-            <span>GitHub: add your profile URL</span>
-            <span>LinkedIn: add your profile URL</span>
-          </div>
-        </div>
-      </div>
-      <div class="contact-scribble" aria-hidden="true">Let’s<br>connect<span>!</span></div>
-    </section>
-  </main>
+  .brand-mark,
+  .nav-contact,
+  .project-art {
+    background-color: var(--theme-red) !important;
+    color: var(--theme-white) !important;
+  }
 
-  <footer class="site-footer section-wrap">
-    <a class="footer-brand" href="#top">MP<span>.</span></a>
-    <p>Mark Presaldo · Information Technology student.</p>
-    <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
-  </footer>
-</body>
-</html>
+  .brand-period,
+  .section-label span:first-child,
+  .skill-index,
+  .project-number,
+  .project-arrow,
+  .project-art-symbol span,
+  .back-top span,
+  .footer-brand span {
+    color: var(--theme-red) !important;
+  }
+</style>
